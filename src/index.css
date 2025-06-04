@@ -101,3 +101,25 @@
 .text-gradient {
   @apply bg-gradient-to-r from-perito-primary to-perito-accent bg-clip-text text-transparent;
 }
+
+@keyframes wave-motion {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(-5px) translateY(-2px);
+  }
+  50% {
+    transform: translateX(0) translateY(0);
+  }
+  75% {
+    transform: translateX(5px) translateY(2px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.animate-wave-motion {
+  animation: wave-motion 4s ease-in-out infinite;
+}

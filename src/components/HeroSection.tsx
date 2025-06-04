@@ -44,7 +44,7 @@ const HeroSection = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="w-full h-16 md:h-24 lg:h-32"
+          className="w-full h-16 md:h-24 lg:h-32 animate-wave-motion"
           fill="currentColor"
           style={{ color: '#f8f9fa', display: 'block' }}
         >
