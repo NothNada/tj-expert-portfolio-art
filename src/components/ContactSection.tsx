@@ -62,12 +62,12 @@ const ContactSection = () => {
           </h2>
           <div className="w-20 h-1 bg-perito-secondary mx-auto"></div>
           <p className="mt-6 max-w-2xl mx-auto text-gray-600 dark:text-gray-300">
-            Para solicitar perícias, agendar consultorias ou tirar dúvidas sobre serviços forenses, preencha o formulário abaixo.
+            Para solicitar perícias, agendar consultorias ou tirar dúvidas sobre serviços forenses, chame nos contatos abaixo.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
-          <div className="lg:col-span-2 space-y-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          
             {contactInfo.map((item, index) => (
               <div 
                 key={index} 
@@ -84,91 +84,6 @@ const ContactSection = () => {
               </div>
             ))}
 
-            <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-              <h3 className="font-bold text-lg mb-3">Horário de Atendimento</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-2">Segunda - Sexta: 8:00 - 18:00</p>
-              <p className="text-gray-500 dark:text-gray-400">Perícias mediante agendamento prévio</p>
-            </div>
-          </div>
-
-          <div className="lg:col-span-3 animate-scale-in">
-            <form 
-              onSubmit={handleSubmit(onSubmit)}
-              className="bg-white dark:bg-perito-dark/50 rounded-lg shadow-lg p-8"
-            >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div className="space-y-2">
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                    Nome completo
-                  </label>
-                  <Input
-                    id="name"
-                    {...register("name", { required: "Nome é obrigatório" })}
-                    placeholder="Seu nome"
-                    className={`w-full ${errors.name ? "border-red-500" : ""}`}
-                  />
-                  {errors.name && (
-                    <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>
-                  )}
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                    Email
-                  </label>
-                  <Input
-                    id="email"
-                    type="email"
-                    {...register("email", { 
-                      required: "Email é obrigatório", 
-                      pattern: {
-                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                        message: "Email inválido"
-                      }
-                    })}
-                    placeholder="seu.email@exemplo.com"
-                    className={`w-full ${errors.email ? "border-red-500" : ""}`}
-                  />
-                  {errors.email && (
-                    <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
-                  )}
-                </div>
-              </div>
-              <div className="mb-6 space-y-2">
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                  Assunto
-                </label>
-                <Input
-                  id="subject"
-                  {...register("subject", { required: "Assunto é obrigatório" })}
-                  placeholder="Como posso ajudar?"
-                  className={`w-full ${errors.subject ? "border-red-500" : ""}`}
-                />
-                {errors.subject && (
-                  <p className="mt-1 text-sm text-red-600">{errors.subject.message}</p>
-                )}
-              </div>
-              <div className="mb-6 space-y-2">
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                  Mensagem
-                </label>
-                <Textarea
-                  id="message"
-                  {...register("message", { required: "Mensagem é obrigatória" })}
-                  placeholder="Descreva sua necessidade em detalhes..."
-                  className={`w-full min-h-[150px] ${errors.message ? "border-red-500" : ""}`}
-                />
-                {errors.message && (
-                  <p className="mt-1 text-sm text-red-600">{errors.message.message}</p>
-                )}
-              </div>
-              <Button 
-                type="submit" 
-                className="w-full bg-perito-primary hover:bg-perito-primary/90 text-white"
-              >
-                Enviar mensagem <Send className="ml-2 h-4 w-4" />
-              </Button>
-            </form>
-          </div>
         </div>
       </div>
     </section>

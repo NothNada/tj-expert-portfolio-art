@@ -23,7 +23,7 @@ const Footer = () => {
             </p>
             <Button 
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-perito-primary transition-all duration-300"
+              className="border-white text-black hover:bg-white hover:text-perito-primary transition-all duration-300"
               onClick={scrollToTop}
             >
               <ArrowUp className="mr-2 h-4 w-4" />

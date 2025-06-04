@@ -23,7 +23,7 @@ const HeroSection = () => {
               <Button size="lg" className="bg-perito-secondary text-white hover:bg-perito-secondary/90">
                 Conheça meu trabalho <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-perito-primary">
+              <Button size="lg" variant="outline" className="border-white text-black hover:bg-white hover:text-perito-primary">
                 Entre em contato
               </Button>
             </div>
