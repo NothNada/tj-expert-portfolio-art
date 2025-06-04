@@ -44,40 +44,11 @@ const HeroSection = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="w-full h-16 md:h-24 lg:h-32 animate-wave"
+          className="w-full h-16 md:h-24 lg:h-32"
           fill="currentColor"
           style={{ color: '#f8f9fa', display: 'block' }}
         >
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C0,0,31,17.35,96.39,38.39S255.7,72,321.39,56.44Z">
-            <animateTransform
-              attributeName="transform"
-              attributeType="XML"
-              type="translate"
-              values="0 0; 20 0; 0 0"
-              dur="3s"
-              repeatCount="indefinite"
-            />
-          </path>
-          <path d="M0,60V120H1200V80c-30,10-60,5-90,0-40-7-80-25-120-15-35,8-70,25-105,15-40-12-80-35-120-20-35,13-70,30-105,20-40-11-80-30-120-15-35,13-70,25-105,15C235,65,195,40,155,55c-35,13-70,20-105,10C15,50,0,40,0,60Z" opacity="0.5">
-            <animateTransform
-              attributeName="transform"
-              attributeType="XML"
-              type="translate"
-              values="0 0; -30 0; 0 0"
-              dur="4s"
-              repeatCount="indefinite"
-            />
-          </path>
-          <path d="M0,80V120H1200V100c-40,8-80,2-120-5-35-6-70-15-105-8-40,8-80,20-120,10-35-9-70-22-105-12-40,11-80,25-120,15-35-9-70-18-105-10-40,9-80,18-120,8C235,85,195,70,155,80c-35,9-70,15-105,8C15,75,0,70,0,80Z" opacity="0.3">
-            <animateTransform
-              attributeName="transform"
-              attributeType="XML"
-              type="translate"
-              values="0 0; 15 0; 0 0"
-              dur="5s"
-              repeatCount="indefinite"
-            />
-          </path>
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C0,0,31,17.35,96.39,38.39S255.7,72,321.39,56.44Z" />
         </svg>
       </div>
     </section>
