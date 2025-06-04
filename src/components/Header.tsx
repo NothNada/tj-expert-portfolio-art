@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,6 +59,7 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
+            <ThemeToggle />
             <Button
               variant="outline"
               className="border-perito-primary text-perito-primary hover:bg-perito-primary hover:text-white transition-all duration-300"
@@ -67,13 +69,16 @@ const Header = () => {
           </nav>
 
           {/* Mobile Navigation Toggle */}
-          <button
-            onClick={toggleMenu}
-            className="md:hidden flex items-center"
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="md:hidden flex items-center space-x-4">
+            <ThemeToggle />
+            <button
+              onClick={toggleMenu}
+              className="flex items-center"
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation Menu */}
