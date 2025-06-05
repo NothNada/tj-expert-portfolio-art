@@ -33,7 +33,7 @@ const HeroSection = () => {
               <img 
                 src="/imgs/ele.png" 
                 alt="Thiago Xavier"
-                className="w-full h-full object-cover"
+                className="w-auto h-auto"
               />
             </div>
           </div>
