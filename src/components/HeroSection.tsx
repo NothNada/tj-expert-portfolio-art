@@ -31,7 +31,7 @@ const HeroSection = () => {
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-scale-in">
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 overflow-hidden rounded-full border-4 border-white shadow-xl">
               <img 
-                src="/lovable-uploads/4630f558-2294-4bb5-9ae5-eca324d5da77.png" 
+                src="/imgs/ele.png" 
                 alt="Thiago Xavier"
                 className="w-full h-full object-cover"
               />

@@ -32,7 +32,7 @@ const AboutSection = () => {
             <Card className="border-0 shadow-xl overflow-hidden">
               <CardContent className="p-0">
                 <img 
-                  src="/lovable-uploads/4630f558-2294-4bb5-9ae5-eca324d5da77.png" 
+                  src="/imgs/ele.png" 
                   alt="Thiago Xavier" 
                   className="w-full h-auto object-cover"
                 />
