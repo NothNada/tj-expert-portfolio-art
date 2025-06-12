@@ -1,47 +1,18 @@
-
-import { useState } from 'react';
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import { useToast } from "@/hooks/use-toast";
-import { Phone, Mail, MapPin, Send } from "lucide-react";
-import { useForm } from "react-hook-form";
-
-interface FormData {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
+import { Phone, Mail, MapPin } from "lucide-react";
 
 const ContactSection = () => {
-  const { toast } = useToast();
-  const { register, handleSubmit, reset, formState: { errors } } = useForm<FormData>();
-
-  const onSubmit = (data: FormData) => {
-    // This would be replaced with actual form submission logic
-    console.log('Form submitted:', data);
-    
-    toast({
-      title: "Mensagem enviada!",
-      description: "Agradecemos seu contato. Responderemos em breve.",
-      duration: 5000,
-    });
-    
-    reset();
-  };
 
   const contactInfo = [
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Telefone",
-      content: "+55 (14) 99999-9999",
+      content: "+55 (14) 99818-1282",
     },
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      content: "thiago.xavier@tj.gov.br",
+      content: "perito.thiagox@gmail.com",
     },
     {
       icon: <MapPin className="h-6 w-6" />,

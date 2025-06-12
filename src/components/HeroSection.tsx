@@ -19,14 +19,14 @@ const HeroSection = () => {
               Especialista em análise e perícia digital, com mais de 10 anos 
               de experiência em investigação e análise forense computacional.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            {/* <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-perito-secondary text-white hover:bg-perito-secondary/90">
                 Conheça meu trabalho <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button size="lg" variant="outline" className="border-white text-black hover:bg-white hover:text-perito-primary">
                 Entre em contato
               </Button>
-            </div>
+            </div> */}
           </div>
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-scale-in">
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 overflow-hidden rounded-full border-4 border-white shadow-xl">

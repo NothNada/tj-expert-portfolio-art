@@ -136,7 +136,7 @@ const CurriculumSection = () => {
           <TabsContent value="experience" className="animate-fade-in">
             <div className="space-y-6">
               {experienceData.map((item, index) => (
-                <Card key={index} className="overflow-hidden border-0 shadow-md">
+                <Card key={index} className="overflow-hidden border-0 shadow-md hover:translate-x-2 hover:-translate-y-2 transition-all">
                   <CardContent className="p-6">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                       <div>
@@ -159,7 +159,7 @@ const CurriculumSection = () => {
           <TabsContent value="education" className="animate-fade-in">
             <div className="space-y-6">
               {educationData.map((item, index) => (
-                <Card key={index} className="overflow-hidden border-0 shadow-md">
+                <Card key={index} className="overflow-hidden border-0 shadow-md hover:translate-x-2 hover:-translate-y-2 transition-all">
                   <CardContent className="p-6">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                       <div>
@@ -182,7 +182,7 @@ const CurriculumSection = () => {
           <TabsContent value="certifications" className="animate-fade-in">
             <div className="space-y-6">
               {certificationsData.map((item, index) => (
-                <Card key={index} className="overflow-hidden border-0 shadow-md">
+                <Card key={index} className="overflow-hidden border-0 shadow-md hover:translate-x-2 hover:-translate-y-2 transition-all">
                   <CardContent className="p-6">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                       <div>
@@ -205,7 +205,7 @@ const CurriculumSection = () => {
           <TabsContent value="skills" className="animate-fade-in">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {skillsData.map((category, index) => (
-                <Card key={index} className="overflow-hidden border-0 shadow-md h-full">
+                <Card key={index} className="overflow-hidden border-0 shadow-md h-full hover:translate-x-2 hover:-translate-y-2 transition-all">
                   <CardContent className="p-6">
                     <h3 className="text-xl font-bold mb-4">{category.category}</h3>
                     <ul className="space-y-2">

@@ -43,7 +43,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           <a href="#hero" className="flex items-center">
             <div className="font-serif text-2xl font-bold text-perito-primary dark:text-white hover:text-perito-accent transition-colors duration-300">
-              Prof. Thiago
+              Thiago Xavier
             </div>
           </a>
 
@@ -58,12 +58,12 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
-            <Button
+            {/* <Button
               variant="outline"
               className="border-perito-primary text-perito-primary hover:bg-perito-primary hover:text-white transition-all duration-300"
             >
               Contato
-            </Button>
+            </Button> */}
           </nav>
 
           {/* Mobile Navigation Toggle */}
@@ -90,13 +90,13 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Button
+              {/* <Button
                 variant="outline"
                 className="border-perito-primary text-perito-primary hover:bg-perito-primary hover:text-white transition-all duration-300 w-full"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contato
-              </Button>
+              </Button> */}
             </div>
           </div>
         )}

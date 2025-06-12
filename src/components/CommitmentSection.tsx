@@ -71,7 +71,7 @@ const CommitmentSection = () => {
               {commitments.map((item, index) => (
                 <Card 
                   key={index} 
-                  className="border-0 shadow-md hover:shadow-lg transition-all duration-300 animate-scale-in"
+                  className="border-0 shadow-md hover:shadow-lg hover:translate-x-2 hover:-translate-y-2 transition-all duration-300 animate-scale-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardContent className="p-5">

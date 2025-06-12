@@ -50,7 +50,7 @@ const ExperienceSection = () => {
           {experiences.map((exp, index) => (
             <Card 
               key={index} 
-              className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full"
+              className="overflow-hidden border-0 shadow-lg hover:shadow-xl hover:translate-x-2 hover:-translate-y-2 transition-all duration-300 h-full"
             >
               <CardContent className="p-6 flex flex-col h-full">
                 <div className="flex items-center mb-4">

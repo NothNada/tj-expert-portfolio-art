@@ -23,7 +23,7 @@ const Footer = () => {
             </p>
             <Button 
               variant="outline"
-              className="border-white text-black hover:bg-white hover:text-perito-primary transition-all duration-300"
+              className="border-white text-black hover:bg-white hover:text-perito-primary hover:translate-x-1 hover:-translate-y-1 transition-all duration-300"
               onClick={scrollToTop}
             >
               <ArrowUp className="mr-2 h-4 w-4" />
@@ -57,14 +57,14 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="text-gray-300">
                 <span className="block">Email:</span>
-                <a href="mailto:thiago.xavier@tj.gov.br" className="hover:text-white transition-colors duration-300">
-                  thiago.xavier@tj.gov.br
+                <a href="mailto:perito.thiagox@gmail.com" className="hover:text-white transition-colors duration-300">
+                perito.thiagox@gmail.com
                 </a>
               </li>
               <li className="text-gray-300">
                 <span className="block">Telefone:</span>
-                <a href="tel:+5514999999999" className="hover:text-white transition-colors duration-300">
-                  +55 (14) 99999-9999
+                <a href="tel:+5514998181282" className="hover:text-white transition-colors duration-300">
+                  +55 (14) 99818-1282
                 </a>
               </li>
               <li className="text-gray-300">
